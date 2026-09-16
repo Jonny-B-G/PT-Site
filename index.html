@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Life Personal Training | Bolton, Horwich, Preston & Bury</title>
+  <meta name="description" content="Good Life Personal Training offers mobile personal training across Preston, Lostock, Bolton and Bury, plus gym-based sessions at The Horwich House Of Strength.">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/images/logo.jpg" alt="Good Life Personal Training logo" class="brand-logo">
+        <span class="brand-name">Good Life<br><small>Personal Training</small></span>
+      </a>
+      <nav class="site-nav">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#areas">Areas</a></li>
+          <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Personal Training &middot; Bolton &amp; Beyond</p>
+        <h1>Train your way to a <span>Good Life.</span></h1>
+        <p class="hero-sub">Whether you want a coach at your door or a proper gym session, I bring the same energy, structure and results to both. Two ways to train with me &mdash; you pick what fits your life.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">See My Services</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <p class="eyebrow">About</p>
+          <h2>Personal training that fits around you</h2>
+          <p>I'm the coach behind Good Life Personal Training. I believe getting fit shouldn't mean fighting your schedule or feeling out of place in a gym &mdash; it should fit into your life and build you up, one session at a time.</p>
+          <p>That's why I offer two ways to train: I'll come to you as a <strong>mobile personal trainer</strong> across Preston, Lostock, Bolton and Bury, or you can train with me at <strong>The Horwich House Of Strength</strong> if you'd rather work out in a fully equipped gym environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <p class="eyebrow center">Services</p>
+        <h2 class="center">Two ways to train with me</h2>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🚐</div>
+            <h3>Mobile Personal Training</h3>
+            <p>Can't get to a gym, or just prefer training in your own space? I'll bring the equipment, the programme and the motivation straight to you.</p>
+            <p class="service-detail"><strong>Covering:</strong> Preston, Lostock, Bolton and out to Bury.</p>
+            <ul class="service-features">
+              <li>Sessions at your home, garden, or a local outdoor space</li>
+              <li>Fully personalised programme built around your goals</li>
+              <li>Flexible scheduling &mdash; early mornings, evenings, weekends</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-small">Enquire About Mobile PT</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🏋️</div>
+            <h3>Gym Personal Training</h3>
+            <p>Prefer a full gym setup? I coach one-to-one sessions at The Horwich House Of Strength, giving you access to serious equipment alongside expert coaching.</p>
+            <p class="service-detail"><strong>Location:</strong> The Horwich House Of Strength, Horwich.</p>
+            <ul class="service-features">
+              <li>Full access to strength &amp; conditioning equipment</li>
+              <li>Structured programmes for strength, fat loss or performance</li>
+              <li>1-to-1 coaching and form correction every session</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-small">Enquire About Gym PT</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="areas">
+      <div class="container areas-inner">
+        <p class="eyebrow center">Areas Covered</p>
+        <h2 class="center">Where I train clients</h2>
+        <div class="areas-list">
+          <span class="area-pill">Preston</span>
+          <span class="area-pill">Lostock</span>
+          <span class="area-pill">Bolton</span>
+          <span class="area-pill">Horwich</span>
+          <span class="area-pill">Bury</span>
+        </div>
+        <p class="areas-note">Not sure if you're in range? Get in touch and I'll let you know.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow center">Get In Touch</p>
+        <h2 class="center">Ready to get started?</h2>
+        <p class="contact-sub center">Fill in the form below and let me know which service you're interested in &mdash; I'll get back to you to sort out the details.</p>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="service">Which service are you interested in?</label>
+            <select id="service" name="service">
+              <option value="mobile">Mobile Personal Training</option>
+              <option value="gym">Gym Personal Training (Horwich House Of Strength)</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo.jpg" alt="Good Life Personal Training logo" class="footer-logo">
+      <p>&copy; <span id="year"></span> Good Life Personal Training. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

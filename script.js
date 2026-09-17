@@ -17,9 +17,10 @@ navList.querySelectorAll('a').forEach((link) => {
 });
 
 // Contact form
-// To make this form actually deliver enquiries to your inbox, sign up for a
-// free endpoint at https://formspree.io (or similar) and paste it below.
-const FORM_ENDPOINT = '';
+// Enquiries are forwarded to ptjonnybgood@gmail.com via formsubmit.co (no
+// account needed). The first submission triggers a one-time confirmation
+// email to that inbox — click the link in it to activate delivery.
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/ptjonnybgood@gmail.com';
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');

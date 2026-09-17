@@ -25,13 +25,14 @@ then visit `http://localhost:8000`.
 
 ## Contact form
 
-The contact form currently has no backend wired up. To start receiving real
-enquiries, sign up for a free form endpoint (e.g. [Formspree](https://formspree.io))
-and paste it into the `FORM_ENDPOINT` constant near the top of `script.js`.
+Enquiries are forwarded to `ptjonnybgood@gmail.com` via [formsubmit.co](https://formsubmit.co),
+which needs no account. The **first** submission after going live sends a
+one-time confirmation email to that inbox — click the link in it to activate
+delivery, then every future enquiry lands straight in the inbox. To switch to
+a different email or provider, edit `FORM_ENDPOINT` in `script.js`.
 
 ## Next steps
 
 - Swap in real photos of you training clients (hero/about sections currently
   have no photography — add an `<img>` where you'd like one)
 - Add real contact details (phone/email/social) once you're ready to publish them
-- Consider polishing the logo image quality if you plan to use it at large sizes

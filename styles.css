@@ -178,7 +178,12 @@ p { margin: 0 0 16px; color: var(--color-grey); }
   padding: 100px 0;
 }
 
-.hero-inner { max-width: 720px; }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
 
 .hero h1 { color: var(--color-white); }
 .hero h1 span { color: var(--color-gold); }
@@ -193,9 +198,31 @@ p { margin: 0 0 16px; color: var(--color-grey); }
 .hero .btn-outline { border-color: var(--color-white); color: var(--color-white); }
 .hero .btn-outline:hover { background: var(--color-white); color: var(--color-black); }
 
+.hero-media img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 12px;
+  border: 3px solid var(--color-gold);
+}
+
 /* About */
 .about { padding: 90px 0; }
-.about-text { max-width: 720px; margin: 0 auto; text-align: center; }
+.about-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-gold);
+}
+.about-text { max-width: 640px; }
 .about-text h2 { margin-top: 4px; }
 
 /* Services */
@@ -213,6 +240,19 @@ p { margin: 0 0 16px; color: var(--color-grey); }
   border: 2px solid var(--color-black);
   border-radius: 8px;
   padding: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card > .btn { margin-top: auto; align-self: flex-start; }
+
+.service-photo {
+  width: calc(100% + 72px);
+  margin: -36px -36px 24px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .service-icon { font-size: 2.5rem; margin-bottom: 12px; }
@@ -325,7 +365,7 @@ p { margin: 0 0 16px; color: var(--color-grey); }
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
 
-  .nav-list {
+  .site-nav .nav-list {
     position: absolute;
     top: 100%;
     left: 0;
@@ -339,8 +379,15 @@ p { margin: 0 0 16px; color: var(--color-grey); }
     gap: 18px;
   }
 
-  .nav-list.open { display: flex; }
+  .site-nav .nav-list.open { display: flex; }
 
   .hero { padding: 70px 0; }
   .about, .services, .areas, .contact { padding: 60px 0; }
+
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-media { order: -1; }
+  .hero-media img { aspect-ratio: 16 / 10; }
+
+  .about-inner { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .about-photo { width: 180px; }
 }

@@ -255,8 +255,6 @@ p { margin: 0 0 16px; color: var(--color-grey); }
   object-position: top center;
 }
 
-.service-icon { font-size: 2.5rem; margin-bottom: 12px; }
-
 .service-detail { color: var(--color-dark); font-weight: 600; }
 
 .service-features {

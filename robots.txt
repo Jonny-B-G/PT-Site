@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jonny-b-g.github.io/PT-Site/sitemap.xml
